@@ -1,0 +1,83 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.perf_test_wraper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50;
+    font: normal 12px/100% Helvetica, sans-serif;
+    color: #bdc3c7;
+}
+
+header.perf_test_header {
+    background-color: #34495e;
+    padding: 30px 30px;
+
+}
+
+h1.pref_test_main_heading {
+    line-height: 100%;
+    font-size: 32px;
+}
+
+section.perf_test_item {
+    background-color: #2c3e50;
+    border-top: 3px solid #bdc3c7;
+    padding: 30px;
+
+}
+
+h2.perf_test_item_heading {
+    font-size: 18px;
+
+}
+
+div.perf_test_cell {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+p.perf_test_property {
+    text-align: center;
+}
+
+p.perf_test_value {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div.perf_test_graf {
+    display: none;
+    background-color: #34495e;
+    height: 35px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+div.perf_test_progress_bar {
+    width: 100%;
+    margin-top: 12px;
+    height: 9px;
+    background-color: #bdc3c7;
+    border-radius: 2px;
+}
+
+.perf_test_progress_bar_value {
+    background-color: #2ecc71;
+    width: 47%;
+    height: 9px;
+    border-radius: 2px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}

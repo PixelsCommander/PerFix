@@ -1,0 +1,13 @@
+{
+  "name": "perfix-control-station",
+  "version": "0.0.0",
+  "homepage": "https://github.com/PixelsCommander/PerFix",
+  "authors": [
+    "PixelsCommander <denis.radin@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.2.16",
+    "peerjs": "~0.3.8"
+  }
+}

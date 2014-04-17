@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="prefixControlStationApp" ng-controller="PrefixControlStationCtrl">
+<head>
+    <title>{{name}} - Perfix Control Station</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/peerjs/peer.js"></script>
+    <script src="./app/js/controllers.js"></script>
+</head>
+<body>
+<div class="perf_test_wraper">
+    <header class="perf_test_header">
+        <h1 class="pref_test_main_heading">{{name}}</h1>
+    </header>
+    <main class="perf_test_contain">
+        <section class="perf_test_item" ng-repeat="test in tests">
+            <h2 class="perf_test_item_heading">{{test.name}}</h2>
+            <!--<div class="perf_test_cell">
+                <p class="perf_test_property">Average FPS</p>
+                <p class="perf_test_value">{{test.averageFPS}}</p>
+            </div>-->
+            <div class="perf_test_cell">
+                <p class="perf_test_property">Average delay</p>
+
+                <p class="perf_test_value">{{test.averageDelay}}</p>
+            </div>
+            <div class="perf_test_cell">
+                <p class="perf_test_property">Average janks</p>
+
+                <p class="perf_test_value">{{test.averageJanks}}</p>
+            </div>
+            <div class="perf_test_cell">
+                <p class="perf_test_property">Min. delay</p>
+
+                <p class="perf_test_value">{{test.minDelay}}</p>
+            </div>
+            <div class="perf_test_cell">
+                <p class="perf_test_property">Max.delay</p>
+
+                <p class="perf_test_value">{{test.maxDelay}}</p>
+            </div>
+            <div class="perf_test_graf"></div>
+            <div class="perf_test_progress_bar">
+                <div class="perf_test_progress_bar_value" style="width: {{(100 / triesNumber) * test.triesCompleted}}%"></div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
