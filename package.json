@@ -1,0 +1,35 @@
+{
+  "name": "PerFix",
+  "version": "0.0.0",
+  "description": "Rendering Rendering smoothness benchmark for scientific - blended performance tuning, written in JavaScript",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PixelsCommander/PerFix.git"
+  },
+  "author": "Denis Radin aka PixelsCommander",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PixelsCommander/PerFix/issues"
+  },
+  "homepage": "https://github.com/PixelsCommander/PerFix",
+  "keywords": [
+    "rendering",
+    "performance",
+    "tuning",
+    "optimization"
+  ],
+  "devDependencies": {
+    "gulp-concat": "~2.2.0",
+    "gulp-uglify": "~0.2.1",
+    "gulp-jshint": "~1.5.5",
+    "gulp": "~3.6.2",
+    "gulp-notify": "~1.2.5"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "asi": true,
+    "curly": true,
+    "eqnull": true,
+    "eqeqeq": true,
+    "globals": {
+        "module": true,
+        "define": true,
+        "window": true,
+        "document": true,
+        "console": true,
+        "$": true,
+        "jQuery": true,
+        "_": true,
+        "Backbone": true,
+        "Marionette": true
+    }
+}
