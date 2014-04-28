@@ -2,7 +2,7 @@
 
 ###Rendering smoothness benchmark for scientific - blended performance tuning, written in JavaScript####
 
-Building native look and feel HTML applications is highly on demand nowadays. Having a lot of fetures available in HTML5 ecosystem it is usualy hard to choose most performant algorithm or rendering approach.
+Building native look and feel HTML applications is highly on demand nowadays and it is usually hard to choose most performant algorithm or rendering approach having a lot of features available in HTML5 ecosystem.
 
 Perfix makes it easy to compare performance of few cases. It measures performance  getting truthy benchmarking statistics avoiding random janks and side effects from benchmarking code.
 
