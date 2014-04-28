@@ -10,7 +10,7 @@ It could be runned on any browser without installing any additional software as 
 
 ###Video###
 
-YT("bMcuIy_ft6k", print = TRUE)
+[![Video](https://i.ytimg.com/vi/bMcuIy_ft6k/1.jpg)](https://www.youtube.com/watch?v=bMcuIy_ft6k&feature=youtu.be)
 
 ###Getting started###
 
