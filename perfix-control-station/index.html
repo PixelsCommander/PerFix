@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html ng-app="prefixControlStationApp" ng-controller="PrefixControlStationCtrl">
+<html ng-app="prefixControlStationApp">
 <head>
     <title>{{name}} - Perfix Control Station</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <script src="./bower_components/angular/angular.js"></script>
-    <script src="./bower_components/peerjs/peer.js"></script>
-    <script src="./app/js/controllers.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/peerjs/peer.js"></script>
+    <script src="app/js/controllers.js"></script>
 </head>
-<body>
+<body ng-controller="PrefixControlStationCtrl">
 <div class="perf_test_wraper">
     <header class="perf_test_header">
-        <h1 class="pref_test_main_heading">{{name}}</h1>
+        <h1 class="pref_test_main_heading">{{data.name}}</h1>
     </header>
     <main class="perf_test_contain">
-        <section class="perf_test_item" ng-repeat="test in tests">
+        <section class="perf_test_item" ng-repeat="test in data.tests">
             <h2 class="perf_test_item_heading">{{test.name}}</h2>
             <!--<div class="perf_test_cell">
                 <p class="perf_test_property">Average FPS</p>
@@ -27,7 +27,7 @@
             <div class="perf_test_cell">
                 <p class="perf_test_property">Average janks</p>
 
-                <p class="perf_test_value">{{test.averageJanks}}</p>
+                <p class="perf_test_value">{{test.janksNumber}}</p>
             </div>
             <div class="perf_test_cell">
                 <p class="perf_test_property">Min. delay</p>
@@ -41,7 +41,7 @@
             </div>
             <div class="perf_test_graf"></div>
             <div class="perf_test_progress_bar">
-                <div class="perf_test_progress_bar_value" style="width: {{(100 / triesNumber) * test.triesCompleted}}%"></div>
+                <div class="perf_test_progress_bar_value" style="width: {{(100 / data.triesNumber) * test.triesCompleted}}%"></div>
             </div>
         </section>
     </main>
