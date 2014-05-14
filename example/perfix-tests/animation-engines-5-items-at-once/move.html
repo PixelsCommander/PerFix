@@ -4,17 +4,12 @@
     <title>My static markup</title>
     <style>
         ul {
-            -webkit-transition: -webkit-transform 0.15s ease;
-            -moz-transition: transform 0.15s ease;
-            -ms-transition: transform 0.15s ease;
-            -o-transition: transform 0.15s ease;
-            transition: transform 0.15s ease;
-            -webkit-transform: translateZ(0);
-            transform: translateZ(0);
             list-style: none;
         }
 
         li {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
             margin: 10px;
             display: inline-block;
             width: 100px;
@@ -31,5 +26,8 @@
         <li></li>
         <li></li>
     </ul>
+    <script src="../../../runner/dist/perfix.min.js"></script>
+    <script src="../vendor/move.min.js"></script>
+    <script src="./spec.js"></script>
 </body>
 </html>

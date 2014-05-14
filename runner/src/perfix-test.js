@@ -166,4 +166,4 @@
     }
 
     w.PerfomanceTest = PerfomanceTest;
-})(window)
+})(window);

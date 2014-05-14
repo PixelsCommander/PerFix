@@ -135,7 +135,7 @@
 
     }
 
-    w.perfTest = new PerformanceTestsRunner();
+    w.perfix = new PerformanceTestsRunner();
 
 })(window);
 
