@@ -66,7 +66,7 @@
             var nextTest = this.group.tests[this.group.currentTest.index + 1];
             this.reOpen(nextTest, 0);
         } else {
-            this.logGroupResult();
+            this.logFinalResult();
         }
     }
 
@@ -78,7 +78,7 @@
         return result;
     }
 
-    p.logGroupResult = function () {
+    p.logFinalResult = function () {
         var minAverage = {
             value: 0
         };

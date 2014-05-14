@@ -127,6 +127,7 @@
             var dataObject = {};
             dataObject.name = test.name;
             if (test.statistics !== undefined) {
+                dataObject.averageFPS = 1000 / test.statistics.result.averageDelay.toFixed(2);
                 dataObject.averageDelay = test.statistics.result.averageDelay.toFixed(2);
                 dataObject.janksNumber = test.statistics.result.janksNumber.toFixed(2);
                 dataObject.minDelay = test.statistics.result.minDelay.toFixed(2);

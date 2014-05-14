@@ -151,7 +151,8 @@
         this.statistics.minDelaySum += this.result.minDelay;
         this.statistics.maxDelaySum += this.result.maxDelay;
         this.statistics.result.averageDelay = this.statistics.averageDelaySum / this.statistics.tries;
-        this.statistics.result.janksNumber = this.statistics.janksNumberSum / this.statistics.tries;
+        this.statistics.result.averageFPS = 1000 / this.statistics.result.averageDelay;
+        this.statistics.result.janksNumber = this.statistics.janksNumberSum;
         this.statistics.result.minDelay = this.statistics.minDelaySum / this.statistics.tries;
         this.statistics.result.maxDelay = this.statistics.maxDelaySum / this.statistics.tries;
     }

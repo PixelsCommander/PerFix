@@ -1,4 +1,13 @@
-var items = document.getElementsByTagName('li');
+var ITEMS_NUMBER = 1000;
+var carusel = document.getElementsByTagName('ul')[0];
+var items = [];
+
+for (var i = 0; i < ITEMS_NUMBER; i++) {
+    var item = document.createElement('li');
+    carusel.appendChild(item);
+    items.push(item);
+}
+
 var animaItems = [];
 
 perfix.describe('Choosing most performant animation system on parallel transitions', [
